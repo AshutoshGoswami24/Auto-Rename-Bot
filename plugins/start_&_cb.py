@@ -2,13 +2,13 @@ import random
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, CallbackQuery, Message, InputMediaPhoto
 
-from helper.database import madflixbotz
+from helper.database import AshutoshGoswami24
 from config import Config, Txt  
 
 @Client.on_message(filters.private & filters.command("start"))
 async def start(client, message):
     user = message.from_user
-    await madflixbotz.add_user(client, message)                
+    await AshutoshGoswami24.add_user(client, message)                
     button = InlineKeyboardMarkup([[
       InlineKeyboardButton('📢 Updates', url='https://t.me/PandaWep'),
       InlineKeyboardButton('💬 Support', url='https://t.me/PandaWepChat')
@@ -76,7 +76,7 @@ async def cb_handler(client, query: CallbackQuery):
         )
     
     elif data == "file_names":
-        format_template = await madflixbotz.get_format_template(user_id)
+        format_template = await AshutoshGoswami24.get_format_template(user_id)
         await query.message.edit_text(
             text=Txt.FILE_NAME_TXT.format(format_template=format_template),
             disable_web_page_preview=True,
