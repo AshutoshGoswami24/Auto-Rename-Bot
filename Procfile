@@ -1,1 +1,1 @@
-worker: python3 PandaWepXAshu.py
+worker: python3 PandaXAshu.py
