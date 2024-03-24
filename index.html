@@ -28,22 +28,65 @@
         <style>
             body {
                 font-family: Arial, sans-serif;
-                margin: 20px;
-                background-color: #f4f4f4; /* Light gray background */
-                color: #333; /* Dark text color */
-            }
-            h1,
-            h2,
-            h3 {
-                color: #0066cc; /* Blue headings */
-            }
-            body {
+                margin: 0;
+                padding: 5px;
+                background-color: #f4f4f4;
+                color: #333;
                 text-align: center;
+            }
+
+            h2 {
+                margin-top: 20px;
+            }
+
+            .deploy-buttons {
+                position: relative; /* To position the button relative to this container */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 20px;
+            }
+
+            #copy-button {
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                background-color: #00f1b5;
+                color: #020202;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                transition: background-color 0.5s ease;
+                border-radius: 5px;
+                position: absolute;
+                top: 10px; /* Adjust as needed */
+                right: 10px; /* Adjust as needed */
+            }
+
+            #copy-button:hover {
+                background-color: #ff1e00;
+            }
+
+            #PandaWep {
+                text-align: start;
+            }
+            .container {
+                max-width: 1000px;
+                margin: 20px auto;
+                padding: 00px;
                 background-color: #ffffff; /* White background */
-                padding: 20px;
                 border-radius: 8px;
                 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             }
+
+            .container img,
+            .container h1,
+            .container h2,
+            .container h3 {
+                margin: 10px; /* Center align images and headings */
+                text-align: center; /* Center align images and headings */
+            }
+
             .config-list {
                 margin-top: 20px;
                 padding: 15px;
@@ -52,20 +95,24 @@
                 text-align: start;
                 overflow: auto;
             }
+
             .deploy-buttons {
                 display: flex;
                 justify-content: space-around;
                 flex-wrap: wrap;
                 margin-top: 20px;
             }
+
             a {
                 text-decoration: none;
                 color: black;
                 transition: color 0.3s, text-shadow 0.3s;
             }
+
             a:hover {
                 text-shadow: 0 0 10px black;
             }
+
             .shot {
                 background-color: #ff6666; /* Red background for shots */
                 color: #fff; /* White text color for shots */
@@ -73,191 +120,206 @@
                 border-radius: 5px;
                 margin-top: 20px;
             }
+
             pre {
                 font-family: Georgia, "Times New Roman", Times, serif;
                 text-align: start;
-                size: 10px;
+                font-size: 14px; /* Increase font size for better readability */
             }
+
             footer {
                 background-color: #f0f0f0;
                 padding: 20px;
                 text-align: center;
-                bottom: 0;
             }
-            .copy-button {
-                position: absolute;
-                top: 10px;
-                right: 10px;
-            }
+
             h2 {
                 text-align: center;
             }
+
             .deploy-buttons {
                 border: 2px solid #ccc;
                 padding: 10px;
                 border-radius: 5px;
             }
+
             .deploy-buttons summary {
                 cursor: pointer;
                 font-weight: bold;
             }
+
             .deploy-buttons summary::-webkit-details-marker {
                 display: none;
             }
+
             .deploy-buttons details[open] {
                 outline: none;
             }
+
             #commands {
-                font-size: 10px;
+                font-size: 14px; /* Increase font size for better readability */
             }
-            #img{
-                width: 270px;
+
+            #img {
+                max-width: 100%;
+                height: auto; /* Maintain aspect ratio */
+                width: 270px; /* Adjusted width for better display on mobile */
             }
+
             #copy-button {
-            position: absolute;
-            top: 10px;
-            right: 40px;
-            color: #020202;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            background-color: #00f1b5;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-            transition: background-color 0.5s ease; /* Slow hover effect */
+                position: absolute;
+                top: 10px;
+                right: 40px;
+                color: rgb(0, 0, 0);
+                font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+                background-color: #00f1b5;
+                border: none;
+                padding: 5px 10px;
+                cursor: pointer;
+                transition: background-color 0.5s ease; /* Slow hover effect */
             }
+
             #copy-button:hover {
-            background-color: #ff1e00; /* Light blue color for hover effect */
+                background-color: #ff1e00; /* Light blue color for hover effect */
+            }
+
+            /* Responsive CSS for mobile devices */
+            @media (max-width: 768px) {
+                .container {
+                    padding: 10px; /* Adjusted padding for better spacing */
+                }
+
+                .deploy-buttons {
+                    flex-direction: column; /* Stack deploy buttons vertically on smaller screens */
+                    align-items: center; /* Center align deploy buttons */
+                }
+
+                #copy-button {
+                    right: 10px; /* Adjusted position for better placement on mobile */
+                }
+            }
+
+            #PandaWep2 {
+                text-align: start;
+                font-style: oblique;
             }
         </style>
     </head>
     <body>
-            <h1>
-                <b><a href="https://t.me/AutoRenamePro_bot" target="_blank">Auto Rename Bot</a></b>
-            </h1>
-            <p>🤍 Thanks for Being Here 🤍</p>
-            <p>🅡🅔🅟🅞 🅢🅣🅐🅣🅢</p>
+        <h1>
+            <b><a href="https://t.me/AutoRenamePro_bot" target="_blank">Auto Rename Bot</a></b>
+        </h1>
+        <p>🤍 Thanks for Being Here 🤍</p>
+        <p>🅡🅔🅟🅞 🅢🅣🅐🅣🅢</p>
+        <br />
+        <img id="img" src="https://github-readme-stats.vercel.app/api/pin/?username=AshutoshGoswami24&repo=Auto-Rename-Bot&theme=dark" alt="github card" />
+        <h2>Configs</h2>
+        <div class="config-list">
+            <p>➜ <strong>BOT_TOKEN</strong> - Get bot token from @BotFather</p>
             <br />
-            <img id="img" src="https://github-readme-stats.vercel.app/api/pin/?username=AshutoshGoswami24&repo=Auto-Rename-Bot&theme=dark" alt="github card" />
-            <h2>Configs</h2>
-            <div class="config-list">
-                <div>
-                    <p>➜ <strong>BOT_TOKEN</strong> - Get bot token from @BotFather</p>
-                </div>
-                <div>
-                    <p>➜ <strong>API_ID</strong> - From my.telegram.org</p>
-                </div>
-                <div>
-                    <p>➜ <strong>API_HASH</strong> - From my.telegram.org</p>
-                </div>
-                <div>
-                    <p>➜ <strong>ADMIN</strong> - Bot controllers id's, multiple id use space to split.</p>
-                </div>
-                <div>
-                    <p>➜ <strong>LOG_CHANNEL</strong> - Bot Log Sending Channel (Id starts with -100).</p>
-                </div>
-                <div>
-                    <p>➜ <strong>DB_URL</strong> - Mongo Database URL from https://cloud.mongodb.com</p>
-                </div>
-                <div>
-                    <p>➜ <strong>DB_NAME</strong> - Your database name from mongoDB (Optional).</p>
-                </div>
-                <div>
-                    <p>➜ <strong>FORCE_SUB</strong> - Your force sub channel username without @ (Optional).</p>
-                </div>
-                <div>
-                    <p>➜ <strong>START_PIC</strong> - Start message photo (Optional).</p>
-                </div>
-                <div>
-                    <p>➜ <strong>WEBHOOK</strong> - If your server needs web service! Value = True else Value = False (Optional).</p>
-                </div>
-            </div>
-
-            <h2>Deployment Support</h2>
-            <div class="deploy-buttons">
-                <details open>
-                    <summary>Deploy To Koyeb</summary>
-                    <p>
-                        <br />
-                        <a target="_blank" href="https://app.koyeb.com/deploy?type=git&repository=github.com/AshutoshGoswami24/Auto-Rename-Bot&branch=main&name=PandaXAshu">
-                            <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy" />
-                        </a>
-                    </p>
-                </details>
-                <details open>
-                    <summary>Deploy To Heroku</summary>
-                    <p>
-                        <br />
-                        <a href="https://heroku.com/deploy?template=https://github.com/AshutoshGoswami24/Auto-Rename-Bot"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy" /></a>
-                    </p>
-                </details>
-            </div>
-            <h2>Features</h2>
-            <div class="deploy-buttons">
-                <p id="pre">
-                    ➜ Renames very fast.<br />
-                    ➜ Permanent Thumbnail support.<br />
-                    ➜ Force join for the user for use.<br />
-                    ➜ Supports Broadcasts.<br />
-                    ➜ Set custom caption.<br />
-                    ➜ Has a custom Start-up pic.<br />
-                    ➜ Force subscribe available.<br />
-                    ➜ Supports unlimited renaming at a time.<br />
-                    ➜ Deploy to Koyeb + Heroku + Railway.<br />
-                    ➜ Automatically rename your files.<br />
-                    ➜ Set mediatype to upload filetype.<br />
-                    ➜ Developer Service 24x7.<br />
-                </p>
-            </div>
-            <div style="margin-bottom: 10px;">
-                <h2>User Commands</h2>
-                <div class="deploy-buttons">
-                    <div style="white-space: pre-line; position: relative; ">
-                        <button onclick="copyToClipboard()" id="copy-button">Copy</button>
-                        <pre id="commands" class="w3-container">
-                            start - Check if the bot is running.
-                            autorename - To auto rename your files.
-                            tutorial - SETUP AUTO RENAME FORMAT 
-                            setmedia - To set your media type preference.
-                            start - To know how to use me.
-                            viewthumb - To view current thumbnail.
-                            delthumb - To delete current thumbnail.
-                            set_caption - set a custom caption.
-                            see_caption - see your custom caption.
-                            del_caption - delete custom caption.
-                            restart - To restart the bot [FOR ADMINS USE ONLY]
-                            broadcast - Broadcast command [FOR ADMINS USE ONLY].
-                            status - Check bot status [FOR ADMINS USE ONLY].</pre>
-                    </div>
-                </div>
-            </div>
-            <script>
-                function copyToClipboard() {
-                    const commands = document.getElementById("commands");
-                    const textArea = document.createElement("textarea");
-                    textArea.value = commands.innerText;
-                    document.body.appendChild(textArea);
-                    textArea.select();
-                    document.execCommand("copy");
-                    document.body.removeChild(textArea);
-                    alert("Copied to clipboard");
-                }
-            </script>
-
-            <footer style="text-align: start;">
-                <div style="display: inline-block;">
-                    <h3 style="display: inline;">Creator</h3>
-                    <p style="display: inline;"><a href="https://github.com/PandaWep">🔥PandaWep</a></p>
-                    <p style="display: inline;"><a href="https://github.com/AshutoshGoswami24">🔥AshutoshGoswami24</a></p>
-                </div>
-                <div style="display: inline-block; text-align: start;">
-                    <h3 style="display: inline-block; text-align: start;">Bots Channel</h3>
-                    <div style="display: inline-block;">
-                        <a href="https://t.me/PandaWep" style="display: block;">
-                            <p>❣️PandaWep🔥</p>
-                        </a>
-                    </div>
-                </div>
-            </footer>
+            <p>➜ <strong>API_ID</strong> - From my.telegram.org</p>
+            <br />
+            <p>➜ <strong>API_HASH</strong> - From my.telegram.org</p>
+            <br />
+            <p>➜ <strong>ADMIN</strong> - Bot controllers id's, multiple id use space to split.</p>
+            <br />
+            <p>➜ <strong>LOG_CHANNEL</strong> - Bot Log Sending Channel (Id starts with -100).</p>
+            <br />
+            <p>➜ <strong>DB_URL</strong> - Mongo Database URL from https://cloud.mongodb.com</p>
+            <br />
+            <p>➜ <strong>DB_NAME</strong> - Your database name from mongoDB (Optional).</p>
+            <br />
+            <p>➜ <strong>FORCE_SUB</strong> - Your force sub channel username without @ (Optional).</p>
+            <br />
+            <p>➜ <strong>START_PIC</strong> - Start message photo (Optional).</p>
+            <br />
+            <p>➜ <strong>WEBHOOK</strong> - If your server needs web service! Value = True else Value = False (Optional).</p>
+            <br />
         </div>
+
+        <h2>Deployment Support</h2>
+        <div class="deploy-buttons">
+            <details open>
+                <summary>Deploy To Koyeb</summary>
+                <p>
+                    <br />
+                    <a target="_blank" href="https://app.koyeb.com/deploy?type=git&repository=github.com/AshutoshGoswami24/Auto-Rename-Bot&branch=main&name=PandaXAshu">
+                        <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy" />
+                    </a>
+                </p>
+            </details>
+            <details open>
+                <summary>Deploy To Heroku</summary>
+                <p>
+                    <br />
+                    <a href="https://heroku.com/deploy?template=https://github.com/AshutoshGoswami24/Auto-Rename-Bot"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy" /></a>
+                </p>
+            </details>
+        </div>
+        <h2>Features</h2>
+        <div class="deploy-buttons">
+            <p id="PandaWep">
+                ➜ Renames very fast.<br />
+                ➜ Permanent Thumbnail support.<br />
+                ➜ Force join for the user for use.<br />
+                ➜ Supports Broadcasts.<br />
+                ➜ Set custom caption.<br />
+                ➜ Has a custom Start-up pic.<br />
+                ➜ Force subscribe available.<br />
+                ➜ Supports unlimited renaming at a time.<br />
+                ➜ Deploy to Koyeb + Heroku + Railway.<br />
+                ➜ Automatically rename your files.<br />
+                ➜ Set mediatype to upload filetype.<br />
+                ➜ Developer Service 24x7.<br />
+            </p>
+        </div>
+        <h2>User Commands</h2>
+        <div class="deploy-buttons">
+            <button onclick="copyToClipboard()" id="copy-button">Copy</button>
+            <p id="PandaWep2">
+                start - Check if the bot is running.<br />
+                autorename - To auto rename your files.<br />
+                tutorial - SETUP AUTO RENAME FORMAT <br />
+                setmedia - To set your media type preference.<br />
+                start - To know how to use me.<br />
+                viewthumb - To view current thumbnail.<br />
+                delthumb - To delete current thumbnail.<br />
+                set_caption - set a custom caption.<br />
+                see_caption - see your custom caption.<br />
+                del_caption - delete custom caption.<br />
+                restart - To restart the bot [FOR ADMINS USE ONLY]<br />
+                broadcast - Broadcast command [FOR ADMINS USE ONLY].<br />
+                status - Check bot status [FOR ADMINS USE ONLY].<br />
+            </p>
+        </div>
+
+        <script>
+            function copyToClipboard() {
+                const commands = document.getElementById("commands");
+                const textArea = document.createElement("textarea");
+                textArea.value = commands.innerText;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand("copy");
+                document.body.removeChild(textArea);
+                alert("Copied to clipboard");
+            }
+        </script>
+
+        <footer style="text-align: start;">
+            <div style="display: inline-block;">
+                <h3 style="display: inline;">Creator</h3>
+                <p style="display: inline;"><a href="https://github.com/PandaWep"><span>&#8608; </span>PandaWep</a></p>
+                <p style="display: inline;"><a href="https://github.com/AshutoshGoswami24"><span>&#8608; </span> AshutoshGoswami24</a></p>
+            </div>
+            <div style="display: inline-block; text-align: start;">
+                <h3 style="display: inline-block; text-align: start;">Bots Channel</h3>
+                <div style="display: inline-block;">
+                    <a href="https://t.me/PandaWep" style="display: block;">
+                        <p><span>&#8608;</span> PandaWep</p>
+                    </a>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
