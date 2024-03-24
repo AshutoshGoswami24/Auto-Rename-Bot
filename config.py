@@ -8,7 +8,7 @@ class Config(object):
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
 
     # database config
-    DB_NAME = os.environ.get("DB_NAME","madflixbotz")     
+    DB_NAME = os.environ.get("DB_NAME","AshutoshGoswami24")     
     DB_URL  = os.environ.get("DB_URL","")
  
     # other configs
@@ -96,5 +96,5 @@ Joine @PandaWep To Help """
 # Jishu Developer 
 # Don't Remove Credit 🥺
 # Telegram Channel @PandaWep
-# Developer @JishuDeveloper
+# Developer @AshutoshGoswami24
 
