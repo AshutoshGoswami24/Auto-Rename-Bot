@@ -2,6 +2,7 @@
 
 <h1 align="center">
  <b><a href="https://t.me/AutoRenamePro_bot" target="/blank"> Auto Rename Bot </a></>
+  <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=ashutoshgoswami24&show_icons=true&locale=en&layout=compact" alt="ashutoshgoswami24" /></p>
 </h1>
 
 <p align="center">🤍 Thanks for Being Here 🤍</p>
