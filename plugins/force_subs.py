@@ -2,10 +2,10 @@ from pyrogram import Client, filters, enums
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import UserNotParticipant
 from config import Config
-from helper.database import madflixbotz
+from helper.database import AshutoshGoswami24
 
 async def not_subscribed(_, client, message):
-    await madflixbotz.add_user(client, message)
+    await AshutoshGoswami24.add_user(client, message)
     if not Config.FORCE_SUB:
         return False
     try:             
