@@ -6,6 +6,10 @@
 
 <p align="center">🤍 Thanks for Being Here 🤍</p>
 
+<p align="center"> 🅡🅔🅟🅞 🅢🅣🅐🅣🅢 </p>
+
+
+![github card](https://github-readme-stats.vercel.app/api/pin/?username=AshutoshGoswami24&repo=Auto-Rename-Bot&theme=dark)
 
 ### ⚡️ Configs 
 
@@ -70,33 +74,21 @@
 
 
 ### 🚦 User Commands
-`/start` - Check if the bot is running.
-
-`/autorename` - To auto rename your files.
-
-`/setmedia` - To set your media type preference.
-
-`/start` - To know how to use me.
- 
-`/viewthumb` - To view current thumbnail.
- 
-`/delthumb` - To delete current thumbnail.
- 
-`/set_caption` - set a custom caption.
- 
-`/see_caption` - see your custom caption.
- 
-`/del_caption` - delete custom caption.
-
-
-
-### Admin Commands
-
-`/restart` - To restart the bot [FOR ADMINS USE ONLY]
- 
-`/broadcast` - Message Broadcast command [FOR ADMINS USE ONLY].
- 
-`/status` - Check bot status [FOR ADMINS USE ONLY].
+```
+start - Check if the bot is running.
+autorename - To auto rename your files.
+tutorial - SETUP AUTO RENAME FORMAT 
+setmedia - To set your media type preference.
+start - To know how to use me.
+viewthumb - To view current thumbnail.
+delthumb - To delete current thumbnail.
+set_caption - set a custom caption.
+see_caption - see your custom caption.
+del_caption - delete custom caption.
+restart - To restart the bot [FOR ADMINS USE ONLY]
+broadcast - Message Broadcast command [FOR ADMINS USE ONLY].
+status - Check bot status [FOR ADMINS USE ONLY].
+```
 
 
 
