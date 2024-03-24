@@ -34,8 +34,11 @@ class Txt(object):
 ➻ This Bot Also Supports Custom Thumbnail And Custom Caption.
     
 ➻ Use /tutorial Command To Know How To Use Me.
-<a href='https://github.com/AshutoshGoswami24/Auto-Rename-Bot'>Auto-Rename-Bot.git</a> 
-<b>Bot Is Made By @PandaWep</b>"""
+
+<b>Bot Is Made By @PandaWep</b>
+
+<b><a href='https://github.com/AshutoshGoswami24/Auto-Rename-Bot'>AshutoshGoswami24/Auto-Rename-Bot.git</a></b>
+"""
     
     FILE_NAME_TXT = """<b><u>SETUP AUTO RENAME FORMAT</u></b>
 
