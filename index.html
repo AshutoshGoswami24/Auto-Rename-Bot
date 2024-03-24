@@ -76,6 +76,7 @@
             pre {
                 font-family: Georgia, "Times New Roman", Times, serif;
                 text-align: start;
+                size: 10px;
             }
             footer {
                 background-color: #f0f0f0;
@@ -109,17 +110,34 @@
             #commands {
                 font-size: 10px;
             }
+            #img{
+                width: 270px;
+            }
+            #copy-button {
+            position: absolute;
+            top: 10px;
+            right: 40px;
+            color: #020202;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: #00f1b5;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            transition: background-color 0.5s ease; /* Slow hover effect */
+            }
+            #copy-button:hover {
+            background-color: #ff1e00; /* Light blue color for hover effect */
+            }
         </style>
     </head>
     <body>
-        <div class="container">
             <h1>
                 <b><a href="https://t.me/AutoRenamePro_bot" target="_blank">Auto Rename Bot</a></b>
             </h1>
             <p>🤍 Thanks for Being Here 🤍</p>
             <p>🅡🅔🅟🅞 🅢🅣🅐🅣🅢</p>
             <br />
-            <img src="https://github-readme-stats.vercel.app/api/pin/?username=AshutoshGoswami24&repo=Auto-Rename-Bot&theme=dark" alt="github card" />
+            <img id="img" src="https://github-readme-stats.vercel.app/api/pin/?username=AshutoshGoswami24&repo=Auto-Rename-Bot&theme=dark" alt="github card" />
             <h2>Configs</h2>
             <div class="config-list">
                 <div>
@@ -175,7 +193,7 @@
             </div>
             <h2>Features</h2>
             <div class="deploy-buttons">
-                <p style="text-align: start;">
+                <p id="pre">
                     ➜ Renames very fast.<br />
                     ➜ Permanent Thumbnail support.<br />
                     ➜ Force join for the user for use.<br />
@@ -190,27 +208,25 @@
                     ➜ Developer Service 24x7.<br />
                 </p>
             </div>
-            <div class="w3-container" style="margin-bottom: 10px;">
+            <div style="margin-bottom: 10px;">
                 <h2>User Commands</h2>
                 <div class="deploy-buttons">
-                    <div style="white-space: pre-line; position: relative;">
-                        <button onclick="copyToClipboard()" class="w3-button w3-blue copy-button">Copy</button>
+                    <div style="white-space: pre-line; position: relative; ">
+                        <button onclick="copyToClipboard()" id="copy-button">Copy</button>
                         <pre id="commands" class="w3-container">
-    start - Check if the bot is running.
-    autorename - To auto rename your files.
-    tutorial - SETUP AUTO RENAME FORMAT 
-    setmedia - To set your media type preference.
-    start - To know how to use me.
-    viewthumb - To view current thumbnail.
-    delthumb - To delete current thumbnail.
-    set_caption - set a custom caption.
-    see_caption - see your custom caption.
-    del_caption - delete custom caption.
-    restart - To restart the bot [FOR ADMINS USE ONLY]
-    broadcast - Broadcast command [FOR ADMINS USE ONLY].
-    status - Check bot status [FOR ADMINS USE ONLY].
-
-                        </pre>
+                            start - Check if the bot is running.
+                            autorename - To auto rename your files.
+                            tutorial - SETUP AUTO RENAME FORMAT 
+                            setmedia - To set your media type preference.
+                            start - To know how to use me.
+                            viewthumb - To view current thumbnail.
+                            delthumb - To delete current thumbnail.
+                            set_caption - set a custom caption.
+                            see_caption - see your custom caption.
+                            del_caption - delete custom caption.
+                            restart - To restart the bot [FOR ADMINS USE ONLY]
+                            broadcast - Broadcast command [FOR ADMINS USE ONLY].
+                            status - Check bot status [FOR ADMINS USE ONLY].</pre>
                     </div>
                 </div>
             </div>
