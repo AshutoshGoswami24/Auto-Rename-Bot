@@ -74,12 +74,14 @@ Use These Keywords To Setup Custom File Name
 ⦿ /see_caption - Use This Command To See Your Caption
 ⦿ /del_caption - Use This Command To Delete Your Caption"""
 
-    PROGRESS_BAR = """\n
-<b>📁 Size</b> : {1} | {2}
-<b>⏳️ Done</b> : {0}%
-<b>🚀 Speed</b> : {3}/s
-<b>⏰️ ETA</b> : {4} 
-<b>🥺 Plz Joine : @PandaWep"""
+    PROGRESS_BAR = """<b>\n
+╭━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━➣
+┣⪼ 🗃️ Sɪᴢᴇ: {1} | {2}
+┣⪼ ⏳️ Dᴏɴᴇ : {0}%
+┣⪼ 🚀 Sᴩᴇᴇᴅ: {3}/s
+┣⪼ ⏰️ Eᴛᴀ: {4}
+┣⪼ 🥺 joine Plz: @PandaWep
+╰━━━━━━━━━━━━━━━➣ </b>"""
     
     
     DONATE_TXT = """<b>🥲 Thanks For Showing Interest In Donation! ❤️</b>
