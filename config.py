@@ -10,6 +10,7 @@ class Config(object):
     # database config
     DB_NAME = os.environ.get("DB_NAME","AshutoshGoswami24")
     DB_URL  = os.environ.get("DB_URL","mongodb+srv://autoranembot:47lRvGstRz0DmA4w@cluster0.r7wan0y.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+    API  = os.environ.get("API","")
 
     # other configs
     BOT_UPTIME  = time.time()
