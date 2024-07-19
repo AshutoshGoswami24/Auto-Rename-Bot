@@ -27,7 +27,7 @@
 
 * `DB_NAME`  - Your database name from mongoDB. `Optional`
 
-* `FORCE_SUB` - Your force sub channel username without @ `Optional`
+* `FORCE_SUB_CHANNELS` - Your force sub channel username without @ `Optional` USE `1CHANNEL, 2CHANNEL, 3CHANNEL`
 
 * `START_PIC` - Start message photo. `Optional`
 
