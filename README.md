@@ -33,7 +33,7 @@
 
 * `WEBHOOK` - If your server is need web service! value = True else value = False. `Optional`
 
-  ### 📶 DEPLOYEMENT SUPPORT
+
 
 
 ## Deploy To Koyeb
