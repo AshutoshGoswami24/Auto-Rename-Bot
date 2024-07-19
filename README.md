@@ -39,6 +39,7 @@
 
 
 ## Deploy To Koyeb
+
 <p>
 <br>                 
 <a target="/blank" href="https://app.koyeb.com/deploy?type=git&repository=github.com/AshutoshGoswami24/Auto-Rename-Bot&branch=main&name=ashu-rename-bot" >
@@ -48,6 +49,7 @@
 
 
 ## Deploy To Heroku
+
  <p>
 <br>
 <a href="https://heroku.com/deploy?template=https://github.com/AshutoshGoswami24/Auto-Rename-Bot">
@@ -56,6 +58,7 @@
 </p>
 
 ## Deploy To Cloud Shell Editor
+
 <a target="/blank" href="https://shell.cloud.google.com/cloudshell/open?cloudshell_git_repo=https://github.com/AshutoshGoswami24/Auto-Rename-Bot&tutorial=Ashu/g-cloud.md" >
   <img src="https://raw.githubusercontent.com/AshutoshGoswami24/text-leech-bot/main/.github/img/x.svg" alt="Deploy To Cloud Shell Editor" style="width:170px;">
 </a>
