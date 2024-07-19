@@ -17,7 +17,7 @@
             "description": "if your server is need web service! value = True else value = False",
             "value": "False"
         },
-        "FORCE_SUB": {
+        "FORCE_SUB_CHANNELS": {
             "description": "Your force sub channel user name without [@] ",
             "value": "",
             "required": false 

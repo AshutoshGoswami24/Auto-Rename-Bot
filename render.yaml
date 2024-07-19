@@ -15,7 +15,7 @@ services:
         sync: false
       - key: API_HASH
         sync: false
-      - key: FORCE_SUB
+      - key: FORCE_SUB_CHANNELS
         sync: false
       - key: LOG_CHANNEL
         sync: false
