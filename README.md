@@ -89,4 +89,4 @@ status - Check bot status [FOR ADMINS USE ONLY].
 
 
 ## DEVLOPER
-- [🔥AshutoshGoswami24](https://github.com/AshutoshGoswami24)
+- [AshutoshGoswami24](https://github.com/AshutoshGoswami24)
