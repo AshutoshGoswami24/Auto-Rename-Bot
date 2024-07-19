@@ -11,12 +11,12 @@ async def start(client, message):
     await AshutoshGoswami24.add_user(client, message)                
     button = InlineKeyboardMarkup([[
       InlineKeyboardButton('📢 Updates', url='https://t.me/PandaWep'),
-      InlineKeyboardButton('💬 Support', url='https://t.me/PandaWepChat')
+      InlineKeyboardButton('💬 Support', url='https://t.me/AshutoshGoswami24')
     ],[
       InlineKeyboardButton('⚙️ Help', callback_data='help'),
       InlineKeyboardButton('💙 About', callback_data='about')
     ],[
-        InlineKeyboardButton("🧑‍💻 Developer 🧑‍💻", url='https://t.me/PandaWepChat')
+        InlineKeyboardButton("🧑‍💻 Developer 🧑‍💻", url='https://t.me/AshutoshGoswami24')
     ]])
     if Config.START_PIC:
         await message.reply_photo(Config.START_PIC, caption=Txt.START_TXT.format(user.mention), reply_markup=button)       
@@ -34,12 +34,12 @@ async def cb_handler(client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton('📢 Updates', url='https://t.me/PandaWep'),
-                InlineKeyboardButton('💬 Support', url='https://t.me/PandaWepChat')
+                InlineKeyboardButton('💬 Support', url='https://t.me/AshutoshGoswami24')
                 ],[
                 InlineKeyboardButton('⚙️ Help', callback_data='help'),
                 InlineKeyboardButton('💙 About', callback_data='about')
                 ],[
-                InlineKeyboardButton("🧑‍💻 Developer 🧑‍💻", url='https://t.me/PandaWepChat')
+                InlineKeyboardButton("🧑‍💻 Developer 🧑‍💻", url='https://t.me/AshutoshGoswami24')
                 ]])
         )
     elif data == "caption":
