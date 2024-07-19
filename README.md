@@ -49,7 +49,7 @@
  <p>
 <br>
 <a href="https://heroku.com/deploy?template=https://github.com/AshutoshGoswami24/Auto-Rename-Bot">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy" style="width:170px;">
 </a>
 </p>
 
