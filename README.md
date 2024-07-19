@@ -5,8 +5,12 @@
 
 </h1>
 
+<!--
 
 ![github card](https://github-readme-stats.vercel.app/api/pin/?username=AshutoshGoswami24&repo=Auto-Rename-Bot&theme=dark)
+
+-->
+
 ### ⚡️ Configs 
 
 * `BOT_TOKEN`  - Get bot token from @BotFather
