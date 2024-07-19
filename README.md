@@ -35,22 +35,24 @@
 
   ### 📶 DEPLOYEMENT SUPPORT
 
-<details><summary>Deploy To ...</summary>
- ## KOYEB
+
+## KOYEB
 <p>
 <br>                 
 <a target="/blank" href="https://app.koyeb.com/deploy?type=git&repository=github.com/AshutoshGoswami24/Auto-Rename-Bot&branch=main&name=ashu-rename-bot" >
   <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy">
 </a>
 </p>
- ## HEROKU
+
+
+## HEROKU
  <p>
 <br>
 <a href="https://heroku.com/deploy?template=https://github.com/AshutoshGoswami24/Auto-Rename-Bot">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 </p>
-</details>
+
 
 
 
