@@ -1,13 +1,9 @@
-<img src="https://graph.org/file/9bf9479159d2036843976.jpg" alt="logo" target="/blank">
+
 
 <h1 align="center">
  <b><a href="https://t.me/AutoRenamePro_bot" target="/blank"> Auto Rename Bot </a></>
 
 </h1>
-
-<p align="center">🤍 Thanks for Being Here 🤍</p>
-
-<p align="center"> 🅡🅔🅟🅞 🅢🅣🅐🅣🅢 </p>
 
 
 ![github card](https://github-readme-stats.vercel.app/api/pin/?username=AshutoshGoswami24&repo=Auto-Rename-Bot&theme=dark)
@@ -38,7 +34,7 @@
 <details><summary>Deploy To Koyeb</summary>
 <p>
 <br>                 
-<a target="/blank" href="https://app.koyeb.com/deploy?type=git&repository=github.com/AshutoshGoswami24/Auto-Rename-Bot&branch=main&name=PandaXAshu" >
+<a target="/blank" href="https://app.koyeb.com/deploy?type=git&repository=github.com/AshutoshGoswami24/Auto-Rename-Bot&branch=main&name=ashu-rename-bot" >
   <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy">
 </a>
 </p>
