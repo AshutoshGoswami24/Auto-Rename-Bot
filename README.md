@@ -1,6 +1,4 @@
-Your project documentation looks great! Here's a polished version of your markdown:
 
----
 
 <h1 align="center">
   <b><a href="https://t.me/AutoRenamePro_bot" target="_blank">Auto Rename Bot</a></b>
