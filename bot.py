@@ -1,20 +1,26 @@
-          # -- https://t.me/AshutoshGoswami24 -- #
-# -- https://github.com/AshutoshGoswami24/Auto-Rename-Bot -- #
-
-
-from datetime import datetime
-from pytz import timezone
+import logging
+import logging.config
+import warnings
+from pyrogram import Client, idle
 from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
 from config import Config
 from aiohttp import web
-from route import web_server
+from pytz import timezone
+from datetime import datetime
+import asyncio
+from plugins.web_support import web_server
+import pyromod
+
+logging.config.fileConfig("logging.conf")
+logging.getLogger().setLevel(logging.INFO)
+logging.getLogger("pyrogram").setLevel(logging.ERROR)
+
 
 class Bot(Client):
-
     def __init__(self):
         super().__init__(
-            name="renamer",
+            name="AshutoshGoswami24",
             api_id=Config.API_ID,
             api_hash=Config.API_HASH,
             bot_token=Config.BOT_TOKEN,
@@ -27,31 +33,56 @@ class Bot(Client):
         await super().start()
         me = await self.get_me()
         self.mention = me.mention
-        self.username = me.username  
-        self.uptime = Config.BOT_UPTIME     
-        if Config.WEBHOOK:
-            app = web.AppRunner(await web_server())
-            await app.setup()       
-            await web.TCPSite(app, "0.0.0.0", Config.PORT).start()     
-        print(f"{me.first_name} Is Started.....✨️")
+        self.username = me.username
+        app = web.AppRunner(await web_server())
+        await app.setup()
+        bind_address = "0.0.0.0"
+        await web.TCPSite(app, bind_address, Config.PORT).start()
+        logging.info(f"{me.first_name} ✅✅ BOT started successfully ✅✅")
+
         for id in Config.ADMIN:
-            try: await self.send_message(Config.LOG_CHANNEL, f"**{me.first_name}  Is Started.....✨️**")                                
-            except: pass
+            try:
+                await self.send_message(
+                    id, f"**__{me.first_name}  Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️__**"
+                )
+            except:
+                pass
+
         if Config.LOG_CHANNEL:
             try:
                 curr = datetime.now(timezone("Asia/Kolkata"))
-                date = curr.strftime('%d %B, %Y')
-                time = curr.strftime('%I:%M:%S %p')
-                await self.send_message(Config.LOG_CHANNEL, f"**{me.mention} Is Restarted !!**\n\n📅 Date : `{date}`\n⏰ Time : `{time}`\n🌐 Timezone : `Asia/Kolkata`\n\n🉐 Version : `v{__version__} (Layer {layer})`</b>")                                                    
+                date = curr.strftime("%d %B, %Y")
+                time = curr.strftime("%I:%M:%S %p")
+                await self.send_message(
+                    Config.LOG_CHANNEL,
+                    f"**__{me.mention} Iꜱ Rᴇsᴛᴀʀᴛᴇᴅ !!**\n\n📅 Dᴀᴛᴇ : `{date}`\n⏰ Tɪᴍᴇ : `{time}`\n🌐 Tɪᴍᴇᴢᴏɴᴇ : `Asia/Kolkata`\n\🤖 Vᴇʀsɪᴏɴ : `v{__version__} (Layer {layer})`</b>",
+                )
             except:
-                print("Please Make This Is Admin In Your Log Channel")
-                
-# Print the configuration to verify
+                print("Pʟᴇᴀꜱᴇ Mᴀᴋᴇ Tʜɪꜱ Iꜱ Aᴅᴍɪɴ Iɴ Yᴏᴜʀ Lᴏɢ Cʜᴀɴɴᴇʟ")
 
-print(f"""          
-      # -- https://t.me/AshutoshGoswami24 -- #
-# -- https://github.com/AshutoshGoswami24/Auto-Rename-Bot -- #
-""")
+    async def stop(self, *args):
+        await super().stop()
+        logging.info("Bot Stopped 🙄")
 
-Bot().run()
 
+bot_instance = Bot()
+
+
+def main():
+    async def start_services():
+        if Config.STRING_SESSION:
+            await asyncio.gather(
+                app.start(),  # Start the Pyrogram Client
+                bot_instance.start(),  # Start the bot instance
+            )
+        else:
+            await asyncio.gather(bot_instance.start())
+
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(start_services())
+    loop.run_forever()
+
+
+if __name__ == "__main__":
+    warnings.filterwarnings("ignore", message="There is no current event loop")
+    main()
