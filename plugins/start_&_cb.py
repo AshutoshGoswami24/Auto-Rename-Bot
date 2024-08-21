@@ -20,8 +20,8 @@ async def start(client, message):
     button = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("📢 Updates", url="https://t.me/PandaWep"),
-                InlineKeyboardButton("💬 Support", url="https://t.me/AshutoshGoswami24"),
+                InlineKeyboardButton("📢 Updates", url="https://t.me/AshutoshGoswami24"),
+                InlineKeyboardButton("💬 Support", url="https://t.me/AshuSupport"),
             ],
             [
                 InlineKeyboardButton("⚙️ Help", callback_data="help"),
@@ -60,9 +60,9 @@ async def cb_handler(client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("📢 Updates", url="https://t.me/PandaWep"),
+                        InlineKeyboardButton("📢 Updates", url="https://t.me/AshutoshGoswami24"),
                         InlineKeyboardButton(
-                            "💬 Support", url="https://t.me/AshutoshGoswami24"
+                            "💬 Support", url="https://t.me/AshuSupport"
                         ),
                     ],
                     [

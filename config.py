@@ -37,7 +37,7 @@ class Txt(object):
     
 ➻ Use /tutorial Command To Know How To Use Me.
 
-<b>Bot Is Made By @PandaWep</b>
+<b>Bot Is Made By @AshutoshGoswami24</b>
 
 <b><a href='https://github.com/AshutoshGoswami24/Auto-Rename-Bot'>AshutoshGoswami24/Auto-Rename-Bot.git</a></b>
 """
@@ -46,10 +46,10 @@ class Txt(object):
 
 Use These Keywords To Setup Custom File Name
 
-✓ episode :- To Replace Episode Number
-✓ quality :- To Replace Video Resolution
+✓ `[episode]` :- To Replace Episode Number
+✓ `[quality]` :- To Replace Video Resolution
 
-<b>➻ Example :</b> <code> /autorename Naruto Shippuden S02 - EPepisode - quality  [Dual Audio] - @PandaWep </code>
+<b>➻ Example :</b> <code> /autorename Naruto Shippuden S01[episode] [quality][Dual Audio] @AshutoshGoswami24</code>
 
 <b>➻ Your Current Auto Rename Format :</b> <code>{format_template}</code> """
     
@@ -57,10 +57,9 @@ Use These Keywords To Setup Custom File Name
 <b>📝 Language :</b> <a href='https://python.org'>Python 3</a>
 <b>📚 Library :</b> <a href='https://pyrogram.org'>Pyrogram 2.0</a>
 <b>🚀 Server :</b> <a href='https://heroku.com'>Heroku</a>
-<b>📢 Channel :</b> <a href='https://t.me/PandaWep'>PandaWep</a>
-<b>🧑‍💻 Developer :</b> <a href='https://t.me/PandaWep'>PandaWep</a>
+<b>🧑‍💻 Developer :</b> <a href='https://t.me/AshutoshGoswami24'>PandaWep</a>
     
-<b>♻️ Bot Made By :</b> @PandaWep"""
+<b>♻️ Bot Made By :</b> @AshutoshGoswami24"""
 
     
     THUMBNAIL_TXT = """<b><u>🖼️  HOW TO SET THUMBNAIL</u></b>
@@ -82,7 +81,7 @@ Use These Keywords To Setup Custom File Name
 ┣⪼ ⏳️ Dᴏɴᴇ : {0}%
 ┣⪼ 🚀 Sᴩᴇᴇᴅ: {3}/s
 ┣⪼ ⏰️ Eᴛᴀ: {4}
-┣⪼ 🥺 joine Plz: @PandaWep
+┣⪼ 🥺 joine Plz: @AshutoshGoswami24
 ╰━━━━━━━━━━━━━━━➣ </b>"""
     
     
@@ -94,13 +93,9 @@ If You Like My Bots & Projects, You Can 🎁 Donate Me Any Amount From 10 Rs Upt
     
     HELP_TXT = """<b>Hey</b> {}
     
-Joine @PandaWep To Help """
+Joine @AshutoshGoswami24 To Help """
 
 
 
 
 
-# Jishu Developer 
-# Don't Remove Credit 🥺
-# Telegram Channel @PandaWep
-# Developer @AshutoshGoswami24
