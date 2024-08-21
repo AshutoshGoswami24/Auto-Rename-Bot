@@ -29,7 +29,3 @@ async def set_media_command(client, message):
 
 
 
-# PandaWep
-# Don't Remove Credit 🥺
-# Telegram Channel @PandaWep
-# Developer https://github.com/PandaWep
