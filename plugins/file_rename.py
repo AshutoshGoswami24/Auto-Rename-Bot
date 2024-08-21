@@ -289,7 +289,3 @@ async def auto_rename_files(client, message):
 
 
 
-# PandaWep
-# Don't Remove Credit 🥺
-# Telegram Channel @PandaWep
-# Developer https://github.com/PandaWep

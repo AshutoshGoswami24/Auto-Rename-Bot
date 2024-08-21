@@ -49,7 +49,3 @@ async def addthumbs(client, message):
 
 
 
-# PandaWep
-# Don't Remove Credit 🥺
-# Telegram Channel @PandaWep
-# Developer https://github.com/PandaWep

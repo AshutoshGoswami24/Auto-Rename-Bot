@@ -99,7 +99,3 @@ async def send_msg(user_id, message):
 
 
 
-# PandaWep
-# Don't Remove Credit 🥺
-# Telegram Channel @PandaWep
-# Developer https://github.com/PandaWep
