@@ -1,14 +1,7 @@
+## Auto Rename Bot With Metadata Rename
 
 
-<h1 align="center">
-  <b><a href="https://t.me/AutoRenamePro_bot" target="_blank">Auto Rename Bot</a></b>
-</h1>
-
-<!-- 
-![github card](https://github-readme-stats.vercel.app/api/pin/?username=AshutoshGoswami24&repo=Auto-Rename-Bot&theme=dark)
--->
-
-## ⚡️ Configurations
+##  Configurations
 
 - `BOT_TOKEN` - Get the bot token from [@BotFather](https://t.me/BotFather).
 - `API_ID` - Obtain from [my.telegram.org](https://my.telegram.org).
