@@ -8,7 +8,7 @@ class Config(object):
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
 
     # database config
-    DB_NAME = os.environ.get("DB_NAME","AshutoshGoswami24")     
+    DB_NAME = os.environ.get("DB_NAME","jbot")     
     DB_URL  = os.environ.get("DB_URL","")
  
     # other configs
