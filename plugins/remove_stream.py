@@ -21,9 +21,9 @@ async def get_streams(file_path):
 def build_buttons(uid):
     """Rebuild the keyboard with Audio/Subtitle sections separated and
     color-coded selection state:
-      🟦 = section header (Video/Audio/Subtitle)
-      🟩 = stream selected for removal
-      🟥 = stream not selected
+      📢 = section header (Video/Audio/Subtitle)
+      ✅ = stream selected for removal
+      ❌ = stream not selected
     """
     data = user_data[uid]
     streams = data["streams"]
@@ -50,8 +50,8 @@ def build_buttons(uid):
         for s in sub_streams:
             buttons.append([_stream_button(s, selected)])
 
-    buttons.append([InlineKeyboardButton("🟩 Remove Selected", callback_data="do_remove")])
-    buttons.append([InlineKeyboardButton("🟥 Cancel", callback_data="cancel_remove")])
+    buttons.append([InlineKeyboardButton("✅ Remove Selected", callback_data="do_remove")])
+    buttons.append([InlineKeyboardButton("❌ Cancel", callback_data="cancel_remove")])
     return InlineKeyboardMarkup(buttons)
 
 
@@ -63,7 +63,7 @@ def _stream_button(s, selected):
     label = f"#{idx} {codec} ({lang})"
     if title:
         label += f" - {title}"
-    mark = "🟩" if idx in selected else "🟥"
+    mark = "✅" if idx in selected else "❌"
     return InlineKeyboardButton(f"{mark} {label}", callback_data=f"toggle_{idx}")
 
 
@@ -91,7 +91,7 @@ async def remove_stream_start(client, message):
     }
 
     await status.edit(
-        "Select streams to remove:\n(🟩 selected / 🟥 not selected)",
+        "Select streams to remove:\n(✅ selected / ❌ not selected)",
         reply_markup=build_buttons(message.from_user.id),
     )
 
@@ -124,7 +124,7 @@ async def cancel_remove(client, callback_query):
     data = user_data.pop(uid, None)
     if data and os.path.exists(data["file"]):
         os.remove(data["file"])
-    await callback_query.message.edit("🟥 Cancelled.")
+    await callback_query.message.edit("❌ Cancelled.")
 
 
 @Client.on_callback_query(filters.regex("^do_remove$"))
